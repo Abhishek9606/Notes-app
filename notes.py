@@ -20,7 +20,7 @@ def sign_up():
         c.execute("SELECT user_id FROM users WHERE user_name  =  ?  AND user_password = ? AND user_email = ?",(username,password,useremail))
 
         result = c.fetchone()
-        result = result[0]
+        
 
         if result:
             return "Account Already Exists"
