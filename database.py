@@ -23,8 +23,6 @@ FOREIGN KEY(user_id) REFERENCES users(user_id)
 )
 ''')
 
-c.execute("SELECT note_content FROM notes WHERE user_id = 3")
-result = c.fetchone()
-print(result)
+
 conn.commit()
 conn.close()

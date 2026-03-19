@@ -1,0 +1,1 @@
+ added sign up feature which was implemented on my own.
